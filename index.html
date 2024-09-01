@@ -1,129 +1,158 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="source/css/main.css">
-    <div class="header-container" id="info-header">
-        <img src="source/images/Headshot.jpg">
-        <ul style="list-style-type:none;">
-            <li><h1><u>Eric Ruxton</u></h1></li>
-            <li><h2><u>Software Developer</u></h2></li>
-            <li><h3><u>AWS, JavaScript, TypeScript, React, C#</u></h3></li>
-            <li>
-                <div class="header-link"><a target="_blank" rel="noopener noreferrer"
-                                            href="https://www.linkedin.com/in/ericruxton/">LinkedIn</a></div>
-            </li>
-            <li>
-                <div class="header-link"><a target="_blank" rel="noopener noreferrer"
-                                            href="https://github.com/EricRuxton">Github</a></div>
-            </li>
-            <li>
-                <div class="header-link"><a target="_blank" rel="noopener noreferrer"
-                                            href="https://www.linkedin.com/in/ericruxton/">Trade Binder</a></div>
-            </li>
-        </ul>
-    </div>
-    <div class="header-container">
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <h2 class="flip-card-content">Development</h2>
-                </div>
-                <div class="flip-card-back">
-                    <p class="flip-card-content">
-                        <b>Tools: JavaScript, TypeScript, C#, React, PHP</b><br><br>
-                        I focus on building code that is readable, reliable, and efficient; following best practices
-                        and coding standards.</p>
-                </div>
-            </div>
-        </div>
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <h2 class="flip-card-content">Deployment</h2>
-                </div>
-                <div class="flip-card-back">
-                    <p class="flip-card-content">
-                        <b>Tools: GitHub, AWS, Docker, Terraform</b><br><br>
-                        Specialising in AWS infrastructure and deployment tools, I provide CI/CD
-                        pipelines to ensure maximum scalability and availability.</p>
-                </div>
-            </div>
-        </div>
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <h2 class="flip-card-content">Documentation</h2>
-                </div>
-                <div class="flip-card-back">
-                    <p class="flip-card-content">
-                        <b>Tools: Swagger/OA3</b><br><br>
-                        Thorough documentation means my code is both easy to read and deploy and
-                        my endpoints are easy to access.</p>
-                </div>
-            </div>
-        </div>
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <h2 class="flip-card-content">Database</h2>
-                </div>
-                <div class="flip-card-back">
-                    <p class="flip-card-content">
-                        <b>Tools: MySQl, MSSQL, GraphQL, Mongo, Firebase</b><br><br>
-                        With experience across multiple data technologies, I deliver information quickly and securely
-                        following data design and integrity principles.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="source/css/main.css" rel="stylesheet">
 </head>
 <body>
+
 <div class="tabs">
     <ul class="tabs__list">
         <li class="tabs__tab">
-            <input class="tabs__input" type="radio" id="tab-0" name="tab-group" checked>
-            <label for="tab-0" class="tabs__label" role="button"><h2>About</h2></label>
+            <input checked class="tabs__input" id="tab-0" name="tab-group" type="radio">
+            <label class="tabs__label" for="tab-0" role="button"><h2>About</h2></label>
             <div class="tabs__content">
-                <h2><u>Certifications:</u></h2>
-                <h2><u>Work Experience:</u></h2>
-                <h2><u>Education:</u></h2>
+                <div class="header-container">
+                    <div>
+                        <img src="source/images/Headshot.jpg"><br/>
+                    </div>
+                    <div id="info-header">
+                        <ul style="list-style-type:none;">
+                            <li><h1>Eric Ruxton</h1></li>
+                            <h4>AWS &nbsp TS/JS &nbsp C# &nbsp Git &nbsp Docker &nbsp PHP &nbsp HTML &nbsp CSS</h4>
+                            <li><h2>Software Developer & Cloud Architect</h2></li>
+                            <li><h3>Saint John, New Brunswick</h3></li>
+                            <li><a href="mailto:eruxton@outlook.com">Contact Me</a></li>
+                        </ul>
+                    </div>
+                    <div id="bio">
+                        <div id="bio-content">
+                            <h3>Bio</h3>
+                            <p>
+                                I am a software developer and cloud architect based out of the Canadian east coast.
+                                I have been a hobby programmer for just under a decade, and a professional developer for
+                                3
+                                years.<br/>
+                                I specialise in building fast and reliable web applications to industry and coding
+                                standards
+                                and deploying those applications to cloud infrastructure.
+                            </p>
+                        </div>
+                        <div>
+                            <a href="https://www.linkedin.com/in/ericruxton/"
+                               rel="noopener noreferrer"
+                               target="_blank">LinkedIn</a> &nbsp;
+                            <a href="https://github.com/EricRuxton"
+                               rel="noopener noreferrer"
+                               target="_blank">Github</a> &nbsp;
+                            <a
+                                    href="https://www.linkedin.com/in/ericruxton/"
+                                    rel="noopener noreferrer"
+                                    target="_blank">Trade Binder</a> &nbsp;
+                            <a download href="/source/Ruxton%20Resume.pdf"
+                            >Resume</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="flip-card-container">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h2 class="flip-card-content">Development</h2>
+                            </div>
+                            <div class="flip-card-back">
+                                <p class="flip-card-content">
+                                    <b>Tools: JavaScript, TypeScript, C#, React, PHP</b><br><br>
+                                    I focus on building code that is readable, reliable, and efficient; following
+                                    best
+                                    practices
+                                    and coding standards.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h2 class="flip-card-content">Deployment</h2>
+                            </div>
+                            <div class="flip-card-back">
+                                <p class="flip-card-content">
+                                    <b>Tools: GitHub, AWS, Docker, Terraform</b><br><br>
+                                    Specialising in AWS infrastructure and deployment tools, I provide CI/CD
+                                    pipelines to ensure maximum scalability and availability.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h2 class="flip-card-content">Data</h2>
+                            </div>
+                            <div class="flip-card-back">
+                                <p class="flip-card-content">
+                                    <b>Tools: MySQL, MSSQL, GraphQL, Mongo, Firebase</b><br><br>
+                                    With experience across multiple data technologies, I deliver information quickly
+                                    and
+                                    securely
+                                    following data design and integrity principles.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h2 class="flip-card-content">Documentation</h2>
+                            </div>
+                            <div class="flip-card-back">
+                                <p class="flip-card-content">
+                                    <b>Tools: Swagger/OA3</b><br><br>
+                                    Thorough documentation means my code is both easy to read and deploy and
+                                    my endpoints are easy to access.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </li>
         <li class="tabs__tab">
-            <input class="tabs__input" type="radio" id="tab-1" name="tab-group">
-            <label for="tab-1" class="tabs__label" role="button"><h2>Portfolio</h2></label>
+            <input class="tabs__input" id="tab-1" name="tab-group" type="radio">
+            <label class="tabs__label" for="tab-1" role="button"><h2>Portfolio</h2></label>
             <div class="tabs__content">
-
-                <h2><u>Trade Binder</u></h2>
-                <div><a target="_blank" rel="noopener noreferrer" href="index.html">MessyDesk Development</a></div>
-                <p><b>Stack: React, NestJS, Python, MySQL, AWS</b></p>
-                <p>Tradebinder is a tool used to manage the value of your trading card collection. The application
-                    tracks your
-                    collection's value and notifies users when cards become valuable.</p>
-                <br/>
-
-                <h2><u>Legions Event Manager</u></h2>
-                <div><a target="_blank" rel="noopener noreferrer" href="https://legionsrealmsatwar.ca/">Future Lore
-                    Studios</a></div>
-                <p><b>Stack: C#, WPF, XAML</b></p>
-                <p>The Legions Event Manager is an application to run and manage Legions: Realms at War events and
-                    seasons.
-                    Stores can register players and run events. The application handles player registration,
-                    match-making, and event report generation.
-                    The admin panel can manage those stores and players, as well as create new ones. The admin panel is
-                    also capable of creating, managing, and tracking
-                    seasonal leaderboards.</p>
-                <br/>
-
-                <h2><u>Nerdz Streaming Companion</u></h2>
-                <div><a target="_blank" rel="noopener noreferrer" href="https://nerdzgaming.com/">Nerdz Gaming</a></div>
-                <p><b>Stack: C#, WinForms</b></p>
-                <p>The Nerdz Streaming Companion allows broadcasters to manage game information of players playing games
-                    in real life, for use in live streams.
-                    The application allowed users to track resources for viewers to watch on stream.</p>
-                <br/>
+                <div class="portfolio-container">
+                    <h2><u>Trade Binder</u></h2>
+                    <div><a href="index.html" rel="noopener noreferrer" target="_blank">MessyDesk Development</a></div>
+                    <p><b>Stack: React, NestJS, Python, MySQL, AWS</b></p>
+                    <p>Tradebinder is a tool used to manage the value of your trading card collection. The application
+                        tracks your
+                        collection's value and notifies users when cards become valuable.</p>
+                    <br/>
+                </div>
+                <div class="portfolio-container">
+                    <h2><u>Legions Event Manager</u></h2>
+                    <div><a href="https://legionsrealmsatwar.ca/" rel="noopener noreferrer" target="_blank">Future Lore
+                        Studios</a></div>
+                    <p><b>Stack: C#, WPF, XAML</b></p>
+                    <p>The Legions Event Manager is an application to run and manage Legions: Realms at War events and
+                        seasons.
+                        Stores can register players and run events. The application handles player registration,
+                        match-making, and event report generation.
+                        The admin panel can manage those stores and players, as well as create new ones. The admin panel
+                        is
+                        also capable of creating, managing, and tracking
+                        seasonal leaderboards.</p>
+                    <br/>
+                </div>
+                <div class="portfolio-container">
+                    <h2><u>Nerdz Streaming Companion</u></h2>
+                    <div><a href="https://nerdzgaming.com/" rel="noopener noreferrer" target="_blank">Nerdz Gaming</a>
+                    </div>
+                    <p><b>Stack: C#, WinForms</b></p>
+                    <p>The Nerdz Streaming Companion allows broadcasters to manage game information of players playing
+                        games
+                        in real life, for use in live streams.
+                        The application allows users to track resources for viewers to watch on stream in real time.</p>
+                </div>
             </div>
         </li>
     </ul>
