@@ -1,47 +1,41 @@
-html{
+html {
     background-color: #011627;
     font-size: 17px;
 }
-img{
-    margin: 10px;
+
+img {
+    margin: 20px 20px 20px 20px;
     border-radius: 100px;
-    border: 10px solid #ff3366;
+    border: 5px solid #ff3366;
     max-height: 25vh;
     max-width: 20vw;
 }
 
-head{
-    background-color: #011627;
-}
-
-#info-header{
-    background-color: #011627;
+#info-header {
+    margin: auto;
+    background-color: #083454;
     color: #F6F7F8;
     border-radius: 5px;
-    border: 2px solid #ff3366
+    border: 5px solid #06243b;
 }
 
-.header-container{
+.header-container {
     display: flex;
     margin: auto;
 }
 
-u{
+u {
     text-decoration: underline;
-     text-decoration-color: #ff3366;
+    text-decoration-color: #ff3366;
 }
 
-a{
+a {
     font-weight: bold;
     color: #ff3366;
 }
 
-a:hover{
+a:hover {
     color: #ffa5bd;
-}
-
-.buzzword-summary{
-    margin: auto
 }
 
 .flip-card {
@@ -49,7 +43,7 @@ a:hover{
     display: table;
     height: 25vh;
     width: 22vw;
-    margin: 10px;
+    margin: 22px;
 }
 
 .flip-card-inner {
@@ -77,12 +71,12 @@ a:hover{
 .flip-card-front {
     color: #ff3366;
     display: table;
-    background-color: #011627;
+    background-color: #083454;
     border-radius: 10px;
-    border: 1px solid #ff3366;
+    border: 5px solid #06243b;
 }
 
-.flip-card-content{
+.flip-card-content {
     display: table-cell;
     vertical-align: middle;
     padding: 10px;
@@ -92,11 +86,12 @@ a:hover{
     transform: rotateY(180deg);
     display: table;
     font-size: 17px;
-    border: 1px solid #ff3366;
     color: #F6F7F8;
     border-radius: 10px;
-    background-color: #011627;
+    background-color: #06243b;
     text-align: left;
+    border-radius: 10px;
+    border: 5px solid #06243b;
 }
 
 .flip-card-content > b {
@@ -104,35 +99,38 @@ a:hover{
 }
 
 .tabs {
+    min-height: 1000px;
+    margin: auto;
     border-radius: 5px;
-    background-color: #011627;
-    min-height: 700px;
-    border: 1px solid #ff3366;
+    border: 5px solid #06243b;
+    background-color: #06243b;
 }
 
-.tabs__label{
+.tabs__label {
     color: #ff3366;
 }
 
-.tabs__content{
+.tabs__content {
     color: #F6F7F8;
 }
 
 .tabs__list {
-    border-bottom: 2px solid #ff3366;
+    background-color: #083454;
     display: flex;
     flex-direction: row;
     list-style: none;
-    margin: 0;
+    margin: auto;
     padding: 0;
     position: relative;
 }
 
 .tabs__tab {
     padding: 0.5rem;
+    margin: auto;
 }
 
 .tabs__content {
+    background-color: #06243b;
     display: none;
     left: 0;
     padding: 0.5rem;
@@ -142,20 +140,20 @@ a:hover{
 
 .tabs__input {
     position: fixed;
-    top:-100px;
+    top: -100px;
 }
 
-.tabs__input+label {
+.tabs__input + label {
     cursor: pointer;
 }
 
-.tabs__input:checked+label {
+.tabs__input:checked + label {
     color: #F6F7F8;
     text-decoration: underline;
     text-decoration-color: #ff3366;
 }
 
-.tabs__input:checked~.tabs__content {
+.tabs__input:checked ~ .tabs__content {
     display: block;
 }
 
@@ -165,16 +163,16 @@ a:hover{
         text-align: center;
     }
 
-    ul{
+    ul {
         padding: 0;
     }
 
     .flip-card {
-        height: 25vh;
+        height: 20vh;
         width: 90vw;
     }
 
-    img{
+    img {
         margin: 20px auto;
     }
 }
