@@ -40,7 +40,7 @@ img {
 }
 
 #bio {
-    margin: auto 25px;
+    margin: 100px 25px 10px 25px;
 }
 
 #bio > div {
@@ -155,11 +155,11 @@ img {
     background-color: #06243b;
 }
 
-.tabs__label {
+.tabs-label {
     color: #ff3366;
 }
 
-.tabs__list {
+.tabs-list {
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -169,12 +169,12 @@ img {
     height: 17vh;
 }
 
-.tabs__tab {
+.tabs-tab {
     padding: 0.5rem;
     margin: auto;
 }
 
-.tabs__content {
+.tabs-content {
     background-color: #06243b;
     display: none;
     left: 0;
@@ -183,22 +183,22 @@ img {
     color: #F6F7F8;
 }
 
-.tabs__input {
+.tabs-input {
     position: fixed;
     top: -100px;
 }
 
-.tabs__input + label {
+.tabs-input + label {
     cursor: pointer;
 }
 
-.tabs__input:checked + label {
+.tabs-input:checked + label {
     color: #F6F7F8;
     text-decoration: underline;
     text-decoration-color: #ff3366;
 }
 
-.tabs__input:checked ~ .tabs__content {
+.tabs-input:checked ~ .tabs-content {
     display: block;
 }
 
@@ -228,15 +228,13 @@ img {
     }
 
     #portfolio-container {
-        align-self: center;
         flex-direction: column;
-        min-width: 90vw;
     }
 
     .portfolio-container-content {
         padding: 10px;
-        margin: 10px auto;
         min-width: 90vw;
+        margin-bottom: 10px;
     }
 
     ul {
