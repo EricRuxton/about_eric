@@ -80,8 +80,8 @@ img {
 }
 
 .portfolio-container-content {
-    margin: auto;
-    max-width: 40vw;
+    margin: 10px auto 10px auto;
+    max-width: 45vw;
     background-color: #083454;
     padding: 10px;
     border-radius: 10px;
