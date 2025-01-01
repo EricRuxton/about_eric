@@ -14,7 +14,6 @@ a {
     color: #ff3366;
 }
 
-
 a:hover {
     color: #ffa5bd;
 }
@@ -62,7 +61,6 @@ img {
     margin-bottom: 20px;
 }
 
-
 .header-container {
     display: flex;
     margin: auto;
@@ -94,7 +92,9 @@ img {
 
 .flip-card {
     background-color: transparent;
-    display: table;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 22vh;
     min-width: 24vw;
     margin: 20px auto;
@@ -106,8 +106,7 @@ img {
     height: 100%;
     text-align: center;
     transition: transform 0.8s;
-    transform-style: preserve-3d;
-    display: table;
+    transform-style: preserve-3d; /* Ensures 3D space is maintained on the inner element */
 }
 
 .flip-card:hover .flip-card-inner {
@@ -118,8 +117,8 @@ img {
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; /* Ensures Safari handles backface visibility */
+    backface-visibility: hidden; /* Ensures Firefox and others hide the backface */
 }
 
 .flip-card-front {
@@ -136,7 +135,7 @@ img {
 }
 
 .flip-card-back {
-    transform: rotateY(180deg);
+    transform: rotateY(180deg); /* Backside starts flipped by default */
     display: table;
     font-size: 17px;
     color: #F6F7F8;
@@ -202,7 +201,6 @@ img {
     display: block;
 }
 
-
 @media screen and (max-width: 1024px) {
     .header-container {
         flex-direction: column;
@@ -215,7 +213,7 @@ img {
     }
 
     #bio {
-        margin: 10px
+        margin: 10px;
     }
 
     #bio-content {
@@ -242,7 +240,7 @@ img {
     }
 
     .flip-card {
-        height: 25vh;
+        height: 30vh;
         min-width: 90vw;
     }
 
